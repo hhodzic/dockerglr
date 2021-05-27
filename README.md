@@ -6,8 +6,8 @@ I was running into issues with getting gatherlog reporter running locally so fig
 
 # How to Run it
 
-git clone <this repository>
-cd <this repository>
-docker build . -t glreporter
-
+git clone <this repository> \n
+cd <this repository> \n
+docker build . -t glreporter \n
+ 
   
