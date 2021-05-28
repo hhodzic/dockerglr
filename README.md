@@ -45,9 +45,16 @@ You could then use docker cp command to copy gatherlogs bundle to your container
 docker cp exampleGatherlogsBundle.tbz2 <CONTAINER ID>:/work
 ```
 
-example (I used ticket 27932 as an example):
+example (You can use attachment from your favorite ticket):
 ```
-docker cp awlqrchfms02.cloud.usfood.com-2021-05-27_20.08.45-UTC.tbz2 013d463e2c32:/work
+docker cp myserver02.cloud.mycompany.com-2021-05-27_20.08.45-UTC.tbz2 013d463e2c32:/work
+```
+
+note:
+```
+you can play with "ticket command" tool as well. Modify your image to include "ticket command" 
+and download your bunldes that way. I was running into some issues with tokens for SendSafely. 
+one of these days I might try to make it work. 
 ```
 
 Once you have your bundle inside the container you can go there and untar the bundle, 
@@ -66,8 +73,8 @@ root@013d463e2c32:/work#
 
 From there run:
 ```
-tar -vxf awlqrchfms02.cloud.usfood.com-2021-05-27_20.08.45-UTC.tbz2
-cd awlqrchfms02.cloud.usfood.com
+tar -vxf myserver02.cloud.mycompany.com-2021-05-27_20.08.45-UTC.tbz2
+cd myserver.cloud.mycompany.com
 cd 2021-05-27_20.08.45-UTC
 ```
 
