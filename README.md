@@ -53,14 +53,13 @@ docker cp myserver02.cloud.mycompany.com-2021-05-27_20.08.45-UTC.tbz2 013d463e2c
 note:
 ```
 you can play with "ticket command" tool as well. Modify your image to include "ticket command" 
-and download your bunldes that way. I was running into some issues with tokens for SendSafely. 
+and download your bundles that way. I was running into some issues with tokens for SendSafely. 
 one of these days I might try to make it work. 
 ```
 
 Once you have your bundle inside the container you can go there and untar the bundle, 
 cd to root of the bundle, and run gatherlog report
 
-```
 Continued from earlier example:
 ```
 docker exec -it 013d463e2c32 /bin/bash
